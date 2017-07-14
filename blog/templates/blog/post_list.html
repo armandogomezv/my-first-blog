@@ -7,6 +7,17 @@
                 <h1><a href="">Django Girls Blog 1</a></h1>
             </div>
             <h3>holalalalal</h3>
+            {% if posts %}
+                <div>
+                <p>Si hay posts</p>
+                	
+                </div>
+             {% else %}
+                <div>
+                <p> No hay posts...</p>
+                	
+                </div>
+             {%  endif %}
 
                 {% for post in posts %}
                   <div>
